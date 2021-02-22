@@ -5,10 +5,16 @@
 from os.path import split
 import argparse
 import pandas as pd
+from apirestoolbox.lib import daily_forecast
+from datetime import date
+
+
+
 
 # Import from hello_world
 import apirestoolbox
 from apirestoolbox.lib import try_me
 
-
+print(daily_forecast("742676", date.today().year,
+                     date.today().month, date.today().day))
 try_me()
